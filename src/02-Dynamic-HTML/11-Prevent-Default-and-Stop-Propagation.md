@@ -49,3 +49,10 @@ handleAction = case _ of
   Keyed keyEvent -> do
     liftEffect $ preventDefault $ KE.toEvent keyEvent
 ```
+
+
+
+```bash
+spago bundle-app -m DynamicHtml.PreventDefault -t assets/dynamic-html/prevent-default.js
+parcel serve assets/dynamic-html/prevent-default.html -o prevent-default--parcelified.html --open
+```

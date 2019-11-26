@@ -22,7 +22,7 @@ main :: Effect Unit
 main =
   -- We're going to run the same function below 3 times using
   -- the 3 values provided here.
-  runStateOnlyDynamicRenderer 1 2 3 simpleIntState
+  runStateOnlyDynamicRenderer 1 2 5 simpleIntState
 
 -- | Shows how to use Halogen VDOM DSL to render dynamic HTML
 -- | (no event handling) based on the state value received.
