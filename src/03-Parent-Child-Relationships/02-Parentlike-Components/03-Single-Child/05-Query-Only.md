@@ -20,3 +20,8 @@ To compile the next file and view its results in the browser, use these instruct
 spago bundle-app -m ParentChildRelationships.ParentlikeComponents.SingleChild.QueryOnly -t assets/parent-child-relationships/parentlike-components/single-child/parent-query-only.js
 parcel serve assets/parent-child-relationships/parentlike-components/single-child/parent-query-only.html -o parent-query-only--parcelified.html --open
 ```
+
+```bash
+spago bundle-app -m ParentChildRelationships.ParentlikeComponents.SingleChild.QueryRewriteWithInputMessage -t assets/parent-child-relationships/parentlike-components/single-child/parent-query-rewrite.js
+parcel serve assets/parent-child-relationships/parentlike-components/single-child/parent-query-rewrite.html -o parent-query-rewrite--parcelified.html --open
+```

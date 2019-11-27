@@ -1,3 +1,5 @@
+## Types
+
 ```purescript
 import Halogen as H
 
@@ -22,6 +24,17 @@ H.mkComponent
     , eval: H.mkEval $ H.defaultEval { handleAction = handleAction }
     }
 
-runUI :: ??
+runUI :: H.Component ... -> ParameterForinitialState -> DomContainer
 
+
+HH.slot _child    unit childComponent   unit                 (\msg -> Just $ AddMessage msg)
+        proxy??   ??                    child init state     raise child message to parent (Action)
+
+
+H.Slot (Const Unit) Int Unit
+        ??          ??  ??
 ```
+
+## Questions
+
+- `handleQuery` like magic. how does it send value to child component?
